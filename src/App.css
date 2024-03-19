@@ -1,38 +1,252 @@
-.App {
-  text-align: center;
-}
+@media screen and (min-width: 576px) {
+  body {
+    background-image: linear-gradient(90deg, rgba(189, 158, 149, 1) 0%, rgba(255, 255, 255, 1) 100%);
+  }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+  .name {
+    color: #2C2D2D;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 30px;
+  }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .Developer {
+    border: 5px solid #3F2C26;
+    background-color: #3F2C26;
+    color: white;
+    font-size: 25px;
+    font-weight: lighter;
+    text-align: center;
+    width: 250px;
+    margin-left: 65px;
+  }
+
+  .info {
+    font-size: 15px;
+    margin: 10px;
+  }
+
+  .image {
+    height: 270px;
+    width: 210px;
+    border: 4px solid #3F2C26;
+    border-radius: 30px;
+    margin-top: 20px;
+    margin-left: 25px;
+    margin-bottom: 40px;
+  }
+
+  .email-icon,
+  .phone-icon,
+  .location-icon {
+    color: #3F2C26;
+    margin-left: 10px;
+    margin-right: 5px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+      'leftbar main'
+      'footer footer';
+    column-gap: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .subtopic {
+    font-size: 15px;
+    text-align: left;
+  }
+
+  .page-leftbar {
+    grid-area: leftbar;
+  }
+
+  .page-main {
+    max-width: 800px;
+  }
+
+  .shape {
+    border: 5px solid #3F2C26;
+    background-color: #3F2C26;
+    color: white;
+    font-size: 25px;
+    text-align: left;
+  }
+
+  .shaperight {
+    border: 5px solid #3F2C26;
+    background-color: #3F2C26;
+    color: white;
+    font-size: 25px;
+    text-align: left;
+    width: 300px;
+  }
+
+  .frame {
+    border: 3px solid #3F2C26;
+    padding-right: 20px;
+    padding-top: 10px;
+    margin-left: 15px;
+    margin: 20px;
+  }
+
+  .line {
+    border-left: 2px solid black;
+    height: 370px;
+    margin: 30px;
+  }
+
+  .circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+
+    margin-right: 10px;
+  }
+
+  .size-box {
+    width: 200px;
+    height: 60px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/*/////////////*/
+@media screen and (max-width: 575.98px) {
+  body {
+    background-image: linear-gradient(90deg, rgba(189, 158, 149, 1) 0%, rgba(255, 255, 255, 1) 100%);
   }
-  to {
-    transform: rotate(360deg);
+
+  .name {
+    color: #2C2D2D;
+    font-size: 19px;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 30px;
   }
+  
+  .Developer {
+    border: 5px solid #3F2C26;
+    background-color: #3F2C26;
+    color: white;
+    font-size: 15px;
+    font-weight: lighter;
+    text-align: center;
+    width: 150px;
+    margin-left: 35px;
+  }
+  
+  .info {
+    border: 10px ;
+    font-size: 10px;
+    margin: 5px;
+    width: 230px;
+  }
+
+  .image {
+    height: 200px;
+    width: 150px;
+    border: 4px solid #3F2C26;
+    border-radius: 30px;
+    margin-top: 20px;
+    margin-left: 25px;
+    margin-bottom: 40px;
+  }
+
+  .email-icon,
+  .phone-icon,
+  .location-icon {
+    color: #3F2C26;
+    margin-left: 10px;
+    margin-right: 5px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+      'leftbar main'
+      'footer footer';
+    column-gap: px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .subtopic {
+    font-size: 13px;
+    text-align: left;
+  }
+
+  .page-leftbar {
+    grid-area: leftbar;
+  }
+
+  .page-main {
+    max-width: 800px;
+  }
+
+  .shape {
+    border: 5px solid #3F2C26;
+    background-color: #3F2C26;
+    color: white;
+    font-size: 15px;
+    text-align: left;
+    width: 160px;
+  }
+
+  .shaperight {
+    border: 5px solid #3F2C26;
+    background-color: #3F2C26;
+    color: white;
+    font-size: 15px;
+    text-align: left;
+    width: 160px;
+  }
+
+  .frame {
+    border: 2px solid #3F2C26;
+    padding-right: 20px;
+    padding-top: 10px;
+    margin-left: 15px;
+    margin: 20px;
+    width: 190px;
+  }
+
+  .subinfo {
+    border: 0px ;
+    font-size: 10px;
+    width: 175px;
+  }
+  .subinfo2 {
+    border: 0px ;
+    font-size: 10px;
+    margin-left: 10px;
+    width: 175px;
+  }
+
+  .line {
+    border-left: 1px solid black;
+    height: 230px;
+    margin: 15px;
+  }
+
+  .circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    margin-right: 10px;
+  }
+
+  .size-box {
+    width: 200px;
+    height: 30px;
+  }
+
 }
